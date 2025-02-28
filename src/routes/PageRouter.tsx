@@ -12,7 +12,7 @@ export default function PageRouter() {
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route element={<RootLayout />}>
-            <Route path="/dashboard" element={<Dashboard />}></Route>
+            <Route path="/dashboard" index element={<Dashboard />}></Route>
             <Route path="/data" element={<AdminPage />}></Route>
           </Route>
           {/* not found */}
