@@ -11,7 +11,7 @@ import Logo from "../assets/logo.png";
 import { Outlet, useNavigate } from "react-router";
 const { Header, Sider } = Layout;
 
-const RootLayout: React.FC = () => {
+const UserLayout: React.FC = () => {
   const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
   const {
@@ -92,4 +92,4 @@ const RootLayout: React.FC = () => {
   );
 };
 
-export default RootLayout;
+export default UserLayout;

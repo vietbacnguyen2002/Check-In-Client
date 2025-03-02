@@ -303,6 +303,7 @@ const DataTable: React.FC = () => {
       sorter: (a, b) => a.id - b.id,
       sortDirections: ["descend", "ascend"],
       ...getColumnSearchProps("id"),
+      responsive:['md','lg','xl','sm'],
     },
 
     {
@@ -313,6 +314,7 @@ const DataTable: React.FC = () => {
       sorter: (a, b) => a.name.length - b.name.length,
       sortDirections: ["descend", "ascend"],
       ...getColumnSearchProps("name"),
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "Số điện thoại",
@@ -320,6 +322,7 @@ const DataTable: React.FC = () => {
       key: "phone",
       width: "10%",
       ...getColumnSearchProps("phone"),
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "Email",
@@ -328,6 +331,7 @@ const DataTable: React.FC = () => {
       sorter: (a, b) => a.email.length - b.email.length,
       sortDirections: ["descend", "ascend"],
       ...getColumnSearchProps("email"),
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "Vị trí",
@@ -336,6 +340,7 @@ const DataTable: React.FC = () => {
       sorter: (a, b) => a.position.length - b.position.length,
       sortDirections: ["descend", "ascend"],
       ...getColumnSearchProps("position"),
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "QR",
@@ -347,6 +352,7 @@ const DataTable: React.FC = () => {
         );
       },
       align: "center",
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "Số lần checked in",
@@ -354,6 +360,7 @@ const DataTable: React.FC = () => {
       key: "numberCheckedIn",
       sorter: (a, b) => a.numberCheckedIn - b.numberCheckedIn,
       sortDirections: ["descend", "ascend"],
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "Thời gian checked in",
@@ -361,6 +368,7 @@ const DataTable: React.FC = () => {
       key: "timeCheckedIn",
       // sorter: (a, b) => a.timeCheckedIn.length - b.timeCheckedIn.length,
       // sortDirections: ["descend", "ascend"],
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "Trạng thái",
@@ -374,6 +382,7 @@ const DataTable: React.FC = () => {
             : "Chưa check in".toUpperCase()}
         </Tag>
       ),
+      responsive:['md','lg','xl','sm'],
     },
     {
       title: "Chỉnh sửa",
@@ -404,6 +413,7 @@ const DataTable: React.FC = () => {
           </Popconfirm>
         </Space>
       ),
+      responsive:['md','lg','xl','sm'],
     },
   ];
 
